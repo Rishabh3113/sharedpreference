@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".login"
+
+
+    >
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/img"
+        android:textColorHint="@color/black"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+
+            android:backgroundTint="@color/white"
+            android:hint="Username"
+            android:id="@+id/username"
+
+
+            android:textColor="@color/black"
+            android:textSize="24dp"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginTop="440dp"
+        app:passwordToggleEnabled="true"
+
+
+        app:passwordToggleTint="@color/black"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Password"
+
+
+
+
+            android:layout_height="match_parent"
+            android:inputType="textVisiblePassword"
+
+
+            android:backgroundTint="@color/white"
+
+            android:id="@+id/Password"
+
+
+            android:textColor="@color/black"
+            android:textSize="24dp"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layout_1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+
+
+        android:layout_height="wrap_content"
+       android:layout_marginTop="540dp"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ok"
+            android:gravity="center_horizontal"
+            android:text="Login"
+            android:textSize="27dp"
+
+            app:backgroundTint="@color/orange"
+            android:id="@+id/login"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_margin="35dp"
+        android:layout_below="@+id/layout_1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="4dp"
+
+            android:src="@drawable/img_2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="4dp"
+
+            android:src="@drawable/img_3"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="4dp"
+
+            android:src="@drawable/img_4"/>
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+
+
+        android:layout_margin="20dp"
+
+        android:src="@drawable/img_5"/>
+
+
+
+</RelativeLayout>
